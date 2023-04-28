@@ -1,0 +1,69 @@
+:root{
+    --font-size: 50px;
+    --font-size-color: 20px;
+    --font-size-button: 30px;
+    --color: white;
+    --bg-color-switch: rgb(0,0,0);
+    --bg-color-button: rgb(255, 200, 0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    transition: 0.3s;
+}
+
+.conteiner{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.color-switch{
+    background-color: var(--bg-color-switch);
+    color: var(--color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px black;
+}
+
+.color-switch h1{
+    font-size: var(--font-size);
+    font-weight: bolder;
+    margin-bottom: 30px;
+    border-bottom: 5px dotted var(--color);
+}
+
+.change-color{
+    margin: 5px 0 35px 0;
+    border: none;
+    padding: 10px;
+    font-size: var(--font-size-button);
+    background: var(--bg-color-button);
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(255, 200, 0, 0.5);
+}
+
+.change-color:hover{
+    transform: scale(1em);
+}
+
+.color{
+    font-size: var(--font-size-color);
+}
+
+
+
+
+
+
+
+
+
+
